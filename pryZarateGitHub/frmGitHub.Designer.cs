@@ -33,6 +33,7 @@
             txtHambre = new TextBox();
             lblHambre = new Label();
             btnYoTambien = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // txtHambre
@@ -60,11 +61,21 @@
             btnYoTambien.Text = "Yo tambien";
             btnYoTambien.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(240, 195);
+            label1.Name = "label1";
+            label1.Size = new Size(38, 15);
+            label1.TabIndex = 4;
+            label1.Text = "label1";
+            // 
             // frmGitHub
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(btnYoTambien);
             Controls.Add(lblHambre);
             Controls.Add(txtHambre);
@@ -80,5 +91,6 @@
         private TextBox txtHambre;
         private Label lblHambre;
         private Button btnYoTambien;
+        private Label label1;
     }
 }
