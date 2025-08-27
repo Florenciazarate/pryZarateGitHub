@@ -28,35 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            radioButton1 = new RadioButton();
+            colorDialog1 = new ColorDialog();
+            colorDialog2 = new ColorDialog();
+            txtHambre = new TextBox();
+            lblHambre = new Label();
+            btnYoTambien = new Button();
             SuspendLayout();
             // 
-            // radioButton1
+            // txtHambre
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(345, 181);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(94, 19);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "radioButton1";
-            radioButton1.UseVisualStyleBackColor = true;
+            txtHambre.Location = new Point(286, 109);
+            txtHambre.Name = "txtHambre";
+            txtHambre.Size = new Size(100, 23);
+            txtHambre.TabIndex = 1;
+            // 
+            // lblHambre
+            // 
+            lblHambre.AutoSize = true;
+            lblHambre.Location = new Point(265, 91);
+            lblHambre.Name = "lblHambre";
+            lblHambre.Size = new Size(143, 15);
+            lblHambre.TabIndex = 2;
+            lblHambre.Text = "TENGO MUCHA HAMBRE";
+            // 
+            // btnYoTambien
+            // 
+            btnYoTambien.Location = new Point(298, 138);
+            btnYoTambien.Name = "btnYoTambien";
+            btnYoTambien.Size = new Size(75, 23);
+            btnYoTambien.TabIndex = 3;
+            btnYoTambien.Text = "Yo tambien";
+            btnYoTambien.UseVisualStyleBackColor = true;
             // 
             // frmGitHub
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(radioButton1);
+            Controls.Add(btnYoTambien);
+            Controls.Add(lblHambre);
+            Controls.Add(txtHambre);
             Name = "frmGitHub";
-            Text = "frmGitHub";
             Load += frmGitHub_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private RadioButton radioButton1;
+        private ColorDialog colorDialog1;
+        private ColorDialog colorDialog2;
+        private TextBox txtHambre;
+        private Label lblHambre;
+        private Button btnYoTambien;
     }
 }
