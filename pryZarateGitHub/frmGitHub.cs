@@ -16,5 +16,10 @@ namespace pryZarateGitHub
         {
             InitializeComponent();
         }
+
+        private void frmGitHub_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
